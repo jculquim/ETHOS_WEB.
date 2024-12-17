@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETHOS - Plataforma de Salud Financiera</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: url('ruta/a/logo-ethos.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005f73;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0a9396;
+        }
+
+        section {
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #005f73;
+        }
+
+        .sub-section {
+            margin-bottom: 2rem;
+        }
+
+        .sub-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #0a9396;
+        }
+
+        .split-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+        .split-section div {
+            flex: 1;
+            padding: 1.5rem;
+            background-color: #e9f5f8;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+
+        table th, table td {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        table th {
+            background-color: #0a9396;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #005f73;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .qr-section img {
+            width: 150px;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .split-section {
+                flex-direction: column;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Bienvenidos a ETHOS</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#mision">Misión y Valores</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#objetivos">Estrategia</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- Inicio -->
+    <section id="inicio">
+        <h2 class="section-title">Introducción</h2>
+        <div class="split-section">
+            <div>
+                <h3>¿Qué es ETHOS?</h3>
+                <p>ETHOS es una plataforma financiera que utiliza inteligencia artificial y personalización para optimizar la salud financiera de nuestros usuarios.</p>
+            </div>
+            <div>
+                <h3>¿Quiénes Somos?</h3>
+                <p>Un equipo de profesionales dedicados a empoderar a jóvenes profesionales, emprendedores y autónomos para tomar decisiones financieras acertadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Misión, Visión y Valores -->
+    <section id="mision">
+        <h2 class="section-title">Misión, Visión y Valores</h2>
+        <div class="sub-section">
+            <h3>Misión</h3>
+            <p>Ayudar a las personas a alcanzar la salud financiera mediante tecnología avanzada y recomendaciones personalizadas.</p>
+        </div>
+        <div class="sub-section">
+            <h3>Visión</h3>
+            <p>Ser líderes en soluciones financieras personalizadas, ofreciendo un enfoque integral y sostenible.</p>
+        </div>
+        <div class="sub-section">
+            <h3>Valores</h3>
+            <p>Innovación, Empatía, Transparencia, Educación y Sostenibilidad.</p>
+        </div>
+    </section>
+
+    <!-- Clientes -->
+    <section id="clientes">
+        <h2 class="section-title">Nuestros Clientes</h2>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Profesón</th>
+                <th>Objetivo</th>
+            </tr>
+            <tr>
+                <td>María</td>
+                <td>28</td>
+                <td>Diseñadora Gráfica</td>
+                <td>Reducir gasto en restaurantes y ahorrar para un viaje.</td>
+            </tr>
+            <tr>
+                <td>Javier</td>
+                <td>30</td>
+                <td>Ingeniero de Software</td>
+                <td>Crear fondo de emergencia y reducir gasto en ocio.</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Estrategia -->
+    <section id="objetivos">
+        <h2 class="section-title">Objetivos Estratégicos</h2>
+        <p>Implementar IA adaptativa, mejorar la educación financiera y reducir gastos impulsivos en un 75%.</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2 class="section-title">Contacto</h2>
+        <div class="contact">
+            <p><strong>Correo Electrónico:</strong> <a href="mailto:ethos@ethos.com">ethos@ethos.com</a></p>
+            <p><strong>Teléfono:</strong> 634 062 710</p>
+            <div class="qr-section">
+                <p>Descarga nuestra app:</p>
+                <a href="https://jc202011232.invisionapp.com/console/share/MKUHPN3TRS6/988978427" target="_blank">
+                    <img src="ruta/a/qr-code.png" alt="QR Code">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>ETHOS - Todos los derechos reservados 2024</p>
+    </footer>
+</body>
+
+</html>
